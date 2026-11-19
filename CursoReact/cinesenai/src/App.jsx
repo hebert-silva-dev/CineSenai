@@ -1,10 +1,10 @@
 import { NavBar } from "./components/NavBar";
+import { Home } from "./pages/Home";
 // import { Rodape } from "./components/Rodape";
 // // function App() {
 // //   const titulo = "CineCenai";
 // //   const ano = 2026;
 // //   const duracaoMinutos = 166;
-
 // //   return(
 // //     <>
 // //       <h1 className="titulo">{titulo}</h1>
@@ -31,23 +31,23 @@ import { NavBar } from "./components/NavBar";
 
 function App() {
   return (
-  //   <div className="container">
-  //     <h1>
-  //       Cine <span style={{ color: "var(--primary)"}}>Senai</span>
-  //     </h1>
-  //     <p style={{ color: "var(--text-secondary)" }}>
-  //       Catalogo de Filmes em breve.
-  //     </p>
-  //     <FichaDoFileme />
-  //   </div>
+    //   <div className="container">
+    //     <h1>
+    //       Cine <span style={{ color: "var(--primary)"}}>Senai</span>
+    //     </h1>
+    //     <p style={{ color: "var(--text-secondary)" }}>
+    //       Catalogo de Filmes em breve.
+    //     </p>
+    //     <FichaDoFileme />
+    //   </div>
 
-  <>
-    <NavBar />
-    <div className="container">
-      <h1>Catálogo</h1>
-    </div>
-  </>
-  );
-};
+    <>
+      {/*Criação da Pagina inicial*/}
+
+      <NavBar /> {/*Barra de navegação*/}
+      <Home /> {/*Rederização da Home*/}
+    </>
+  );  
+}
 
 export default App;
