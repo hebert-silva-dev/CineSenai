@@ -1,5 +1,6 @@
 import { NavBar } from "./components/NavBar";
 import { Home } from "./pages/Home";
+import { Constador } from "./components/Contador";
 // import { Rodape } from "./components/Rodape";
 // // function App() {
 // //   const titulo = "CineCenai";
@@ -45,6 +46,7 @@ function App() {
       {/*Criação da Pagina inicial*/}
 
       <NavBar /> {/*Barra de navegação*/}
+      <Constador />
       <Home /> {/*Rederização da Home*/}
     </>
   );  

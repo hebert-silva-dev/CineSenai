@@ -7,12 +7,25 @@ export const FilmeCard = ({
 }) => {
   return (
     <div className="movie-card glass glss-hover">
-      <div className="movie-poster-wrapper">
+      {/* <div className="movie-poster-wrapper">
         <img
           src={urlPoster}
           alt={`Pôster do filme ${titulo}`}
           className="movie-poster"
         />
+      </div> */}
+      <div className="movie-poster-wrapper">
+        {urlPoster ? (
+          <img
+            src={urlPoster}
+            alt={`Poster do filme: ${titulo}`}
+            className="movie-poster"
+          />
+        ) : (
+          <div className="movie-poster-fallback">
+            <span>{titulo}</span>
+          </div>
+        )}
       </div>
       <div className="movie-info">
         <h3 className="movie-title">{titulo}</h3>
